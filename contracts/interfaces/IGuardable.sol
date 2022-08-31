@@ -4,6 +4,7 @@ pragma solidity ^0.8.16;
 
 import "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 
+// Interface ID: 0x126f5523
 interface IGuardable is IERC165 {
 
   error LockedByGuardian();

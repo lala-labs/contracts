@@ -1,13 +1,8 @@
-require('@nomiclabs/hardhat-waffle');
-require('@nomiclabs/hardhat-ethers');
-
-if (process.env.REPORT_GAS) {
-  require('hardhat-gas-reporter');
-}
-
-if (process.env.REPORT_COVERAGE) {
-  require('solidity-coverage');
-}
+import '@nomiclabs/hardhat-waffle';
+import '@nomiclabs/hardhat-ethers';
+import '@typechain/hardhat';
+import 'hardhat-gas-reporter';
+import 'solidity-coverage';
 
 /**
  * @type import('hardhat/config').HardhatUserConfig
