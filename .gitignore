@@ -1,0 +1,17 @@
+node_modules/
+.env
+coverage
+coverage.json
+typechain
+
+#Hardhat files
+cache
+artifacts
+build
+
+#IDE
+.idea
+
+# only used to package @lalalabs/contracts
+contracts/build/
+contracts/README.md
