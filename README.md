@@ -11,5 +11,5 @@ You can pull directly from git and the latest tag:
 
 _package.json_
 ```
-"lalalabs-contracts": "git+https://github.com/lala-labs/contracts.git#0.0.1",
+"lalalabs-contracts": "git+https://github.com/lala-labs/contracts.git#LATEST_TAG",
 ```
