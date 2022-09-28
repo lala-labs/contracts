@@ -1,7 +1,7 @@
 import {expect} from "chai";
 import {ContractFactory, Signer} from "ethers";
-import { artifacts, ethers } from 'hardhat';
-import { GuardableImpl, IGuardable } from '../typechain-types';
+import { ethers } from 'hardhat';
+import { GuardableImpl } from '../typechain-types';
 
 describe('GuardableImpl', function() {
 

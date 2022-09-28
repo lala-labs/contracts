@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
-// LaLaLabs Contracts v0.0.1
+// LaLaLabs Contracts v0.1.0
+
 pragma solidity ^0.8.16;
 
 import "@openzeppelin/contracts/utils/introspection/IERC165.sol";
