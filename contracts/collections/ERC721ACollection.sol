@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// LaLaLabs Contracts v0.2.0
+// LaLaLabs Contracts v0.2.1
 pragma solidity ^0.8.16;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -128,7 +128,7 @@ Licensable
    * It gradually moves to O(1) as tokens get transferred around over time.
    * Also see `ERC721A._ownershipOf(uint256 tokenId)`
    */
-  function _getTokenExtraData(uint256 tokenId) internal virtual returns(uint24) {
+  function _getTokenExtraData(uint256 tokenId) internal view virtual returns(uint24) {
     return _ownershipOf(tokenId).extraData;
   }
 
@@ -136,7 +136,7 @@ Licensable
     _setExtraDataAt(tokenId, extraData);
   }
 
-  function _getWalletExtraData(address wallet) internal virtual returns(uint64) {
+  function _getWalletExtraData(address wallet) internal view virtual returns(uint64) {
     return _getAux(wallet);
   }
 
