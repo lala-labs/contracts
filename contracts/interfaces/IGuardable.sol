@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// LaLaLabs Contracts v0.2.0
+// LaLaLabs Contracts v0.2.1
 
 pragma solidity ^0.8.16;
 

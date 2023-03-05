@@ -1,7 +1,7 @@
 {
   "name": "@lalalabs/contracts",
   "description": "Smart Contract library for Solidity",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "files": [
     "**/*.sol",
     "/build/contracts/*.json",
