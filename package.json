@@ -1,7 +1,7 @@
 {
   "name": "lalalabs-solidity",
   "description": "Solidity tools and contracts.",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "files": [
     "/contracts/**/*.sol",
     "/build/contracts/*.json",

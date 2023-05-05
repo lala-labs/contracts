@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// LaLaLabs Contracts v0.2.1
+// LaLaLabs Contracts v0.3.0
 pragma solidity ^0.8.16;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -172,7 +172,7 @@ Licensable
   /**
    * @notice Approvals can be locked by setting up a guardian.
    */
-  function approve(address to, uint256 tokenId) public override(ERC721A, IERC721A) payable {
+  function approve(address to, uint256 tokenId) public virtual override(ERC721A, IERC721A) payable {
     _checkHasGuardian();
 
     super.approve(to, tokenId);
@@ -184,7 +184,7 @@ Licensable
    * after a user has set the approvals they want to set (e.g. for all marketplaces they want to trade on).
    * Approvals can still be removed while a guardian is set.
    */
-  function setApprovalForAll(address operator, bool approved) public override(ERC721A, IERC721A) {
+  function setApprovalForAll(address operator, bool approved) public virtual override(ERC721A, IERC721A) {
     if (approved) _checkHasGuardian();
 
     super.setApprovalForAll(operator, approved);
